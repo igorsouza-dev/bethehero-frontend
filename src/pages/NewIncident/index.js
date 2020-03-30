@@ -25,7 +25,7 @@ export default function NewIncident() {
         { headers: { ong_id: ongObj.id } }
       );
       history.push('/profile');
-    } catch (e) {
+    } catch (err) {
       Swal.fire({
         title: 'Error!',
         text: 'Ocorreu um erro ao cadastrar o novo caso',
